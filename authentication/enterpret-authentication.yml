@@ -1,0 +1,31 @@
+generated: '2026-07-19'
+method: searched
+source: https://helpcenter.enterpret.com/en/articles/12665166-enterpret-mcp-server
+docs: https://helpcenter.enterpret.com/en/collections/9060203-enterpret-mcp
+note: >-
+  Enterpret does not publish a public OpenAPI. Auth model is documented for the
+  Enterpret MCP server (wisdom-api.enterpret.com), which fronts the customer
+  intelligence / Wisdom graph. OAuth is the recommended flow; a long-lived
+  bearer auth token is the alternative.
+summary:
+  types:
+  - oauth2
+  - http
+  http_schemes:
+  - bearer
+  recommended: oauth2
+schemes:
+- name: oauth
+  type: oauth2
+  description: Recommended authentication, managed through each MCP host's authorization flow.
+  sources:
+  - https://helpcenter.enterpret.com/en/articles/12665166-enterpret-mcp-server
+- name: bearerToken
+  type: http
+  scheme: bearer
+  description: >-
+    Long-lived bearer auth token generated in the Enterpret dashboard
+    (Settings > Enterpret MCP > Generate under Auth Token). Sent as
+    'Authorization: Bearer <token>'. Tokens expire after 6 months.
+  sources:
+  - https://helpcenter.enterpret.com/en/articles/12665166-enterpret-mcp-server
