@@ -1,0 +1,51 @@
+generated: '2026-07-19'
+method: searched
+status: published
+source: https://helpcenter.enterpret.com/en/articles/12665166-enterpret-mcp-server
+server:
+  name: enterpret
+  transport: http
+  url: https://wisdom-api.enterpret.com/server/mcp
+  transport_note: Streamable HTTP
+auth:
+  methods:
+  - oauth
+  - bearer-token
+  recommended: oauth
+  bearer:
+    generation: Enterpret dashboard > Settings > Enterpret MCP > Generate under Auth Token
+    header: 'Authorization: Bearer YOUR_AUTH_TOKEN_HERE'
+    expiration: Tokens expire after 6 months
+clients:
+- Claude
+- Cursor
+- Notion
+- Codex
+- Glean
+- Slack
+- ChatGPT
+config_example:
+  mcpServers:
+    enterpret:
+      command: npx
+      args:
+      - -y
+      - mcp-remote
+      - https://wisdom-api.enterpret.com/server/mcp
+      - --header
+      - 'Authorization: Bearer YOUR_AUTH_TOKEN_HERE'
+tools:
+- name: get_organization_details
+  description: Identifies your Enterpret organization, so answers link back to your dashboard.
+- name: get_graph_schema
+  description: Lets the assistant see what kinds of feedback you track and how it's organized.
+- name: get_query_examples
+  description: Gives the assistant reference patterns for common kinds of feedback questions before it answers.
+- name: search_graph_fields
+  description: Surfaces integration-specific data points like Zendesk tags, App Store ratings, or Gong call metadata.
+- name: search_graph_values
+  description: Looks up the exact themes, accounts, sources, or taxonomy values in your data.
+- name: run_graph_query
+  description: Pulls the feedback that answers your question, with citation links back to source records.
+- name: find_user_quote
+  description: Surfaces verbatim customer quotes from the records behind your answer.

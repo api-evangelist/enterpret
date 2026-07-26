@@ -1,0 +1,39 @@
+generated: '2026-07-19'
+method: searched
+source: https://www.enterpret.com/changelog
+scheme: dated
+window: recent
+entries:
+- date: '2026-06'
+  title: 'Agent OS: Proactive Customer Intelligence, Powered by Enterpret Agent'
+  type: addition
+  highlight: Launched Agent OS in beta with reusable skills, connected context, and shareable artifacts.
+- date: '2026-06'
+  title: Enterpret is Now Available in ChatGPT
+  type: addition
+  highlight: Access customer intelligence directly within ChatGPT workflows.
+- date: '2026-06'
+  title: 'New Feedback Integrations: Pylon, Decagon, Fathom, and HubSpot'
+  type: addition
+  highlight: Four integrations for ingesting conversations and CRM activity.
+- date: '2026-06'
+  title: 'Live Deal Intelligence: Find Risk Before a Deal Closes'
+  type: addition
+  highlight: Early access release identifying material risks during open opportunities.
+- date: '2026-05'
+  title: 'Enterpret MCP Server v2: Cited, Simpler, and Works Everywhere'
+  type: addition
+  breaking: false
+  highlight: Major upgrade with citations on every answer and support for any MCP host.
+- date: '2026-05'
+  title: 'Adaptive Taxonomy: AI-Assisted Editing, Validation, and Chat'
+  type: addition
+  highlight: Chat-based taxonomy refinement with quality checks before changes go live.
+- date: '2026-04'
+  title: 'Enterpret Everywhere: Bringing Customer Intelligence to Slack, Claude, Notion, Glean'
+  type: addition
+  highlight: Expanded platform availability across multiple AI tools and workspaces.
+- date: '2026-04'
+  title: Sales Intelligence
+  type: addition
+  highlight: Analyzes closed deals to surface win/loss reasons ranked by revenue impact.

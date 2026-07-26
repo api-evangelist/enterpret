@@ -1,0 +1,24 @@
+# Enterpret (www.enterpret.com)
+
+> This file provides structured guidance for LLMs and AI agents to understand the Enterpret platform, its features, and available resources.
+
+## Core Summary
+Enterpret is a leading customer intelligence platform that unifies feedback from over 50+ sources (Zendesk, Gong, Intercom, etc.) into a single source of truth. It uses a proprietary Customer Knowledge Graph and Adaptive Taxonomy to help product and CX teams transform scattered feedback into actionable insights. Enterpret also provides Wisdom AI, an agentic interface for natural language querying of customer data.
+
+## Primary Resources
+- [Homepage](https://www.enterpret.com/) - Overview of the platform.
+- [Product Solutions](/solutions/product) - How product teams use Enterpret to analyze customer feedback.
+- [Voice of Customer](/solutions/voice-of-customer) - Description of Enterpret's Enterprise VoC software.
+- [Customer Stories](/customers) - Case studies including Canva, Notion, and Strava.
+- [Changelog](/changelog) - Latest product updates and feature releases.
+- [Blog](/blog) - Thought leadership on customer intelligence and AI.
+
+## Technical & Integration Details
+- [Integrations](/integrations) - List of 50+ supported feedback sources.
+- [Wisdom AI](/wisdom-ai) - Details on Enterpret's natural language insights engine.
+- [MCP Server](https://helpcenter.enterpret.com/en/articles/9114002-wisdom-user-guide) - Enterpret’s Model Context Protocol integration for Claude and Cursor.
+- [Help Center](https://helpcenter.enterpret.com/) - Detailed technical documentation.
+
+## Data Guidelines
+- For a comprehensive list of all indexable content, refer to https://www.enterpret.com/sitemap.xml.
+- Content is updated frequently; prioritizing the /changelog is recommended for the latest feature capabilities.

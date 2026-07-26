@@ -1,0 +1,16 @@
+generated: '2026-07-19'
+method: searched
+source: https://www.enterpret.com/security
+standards:
+- id: soc2
+  conforms: true
+  evidence: SOC 2 listed on the Enterpret security/trust page.
+- id: iso27001
+  conforms: true
+  evidence: ISO/IEC 27001 listed on the Enterpret security/trust page.
+- id: gdpr
+  conforms: true
+  evidence: GDPR compliance stated on the Enterpret security/trust page.
+- id: oauth2
+  conforms: true
+  evidence: Enterpret MCP server documents OAuth as the recommended authentication flow.

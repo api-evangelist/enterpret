@@ -1,8 +1,27 @@
 aid: enterpret
 name: Enterpret
-description: Enterpret is a company surfaced as a portfolio company of canaan-partners, kleiner-perkins
-  and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the
-  enrichment pipeline.
+description: >-
+  Enterpret is a customer intelligence platform that unifies feedback from 50+
+  sources — support tickets, sales and success calls, surveys, reviews, app
+  stores, and social — into a single source of truth built on a proprietary
+  Customer Knowledge Graph and Adaptive Taxonomy. Product, CX, and go-to-market
+  teams use it to quantify what is driving churn, prioritize the roadmap, and
+  surface win/loss reasons. Its Wisdom AI and hosted MCP server let teams query
+  customer feedback in natural language from Claude, Cursor, Notion, Slack,
+  ChatGPT, and other agents, with citations back to source records.
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://cdn.prod.website-files.com/69e6b779dbc68d6b76294ae1/69e6b779dbc68d6b76294e12_1200x630%20Open%20Graph.png
 url: https://raw.githubusercontent.com/api-evangelist/enterpret/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,9 +32,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Customer Intelligence
+- Customer Feedback
+- Voice of Customer
+- Customer Experience
+- Analytics
+- Artificial Intelligence
+- MCP
+- SaaS
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,3 +52,47 @@ maintainers:
 common:
 - type: Website
   url: https://www.enterpret.com
+- type: DeveloperPortal
+  url: https://helpcenter.enterpret.com/en/collections/9060203-enterpret-mcp
+- type: Documentation
+  url: https://helpcenter.enterpret.com/en/
+- type: Support
+  url: https://helpcenter.enterpret.com/en/
+- type: GettingStarted
+  url: https://www.enterpret.com/guides
+- type: Blog
+  url: https://www.enterpret.com/blog
+- type: SignUp
+  url: https://www.enterpret.com/try-enterpret
+- type: Login
+  url: https://dashboard.enterpret.com/login
+- type: TermsOfService
+  url: https://www.enterpret.com/terms
+- type: PrivacyPolicy
+  url: https://www.enterpret.com/privacy-and-policy
+- type: StatusPage
+  url: https://status.enterpret.com/
+- type: Compliance
+  url: https://www.enterpret.com/security
+- type: MCPServer
+  name: Enterpret MCP Server
+  url: mcp/enterpret-mcp.yml
+- type: LLMsTxt
+  url: llms/enterpret-llms.txt
+- type: Authentication
+  url: authentication/enterpret-authentication.yml
+- type: ChangeLog
+  url: changelog/enterpret-changelog.yml
+- type: Lifecycle
+  url: lifecycle/enterpret-lifecycle.yml
+- type: Conformance
+  url: conformance/enterpret-conformance.yml
+- type: TrustCenter
+  url: security/enterpret-trust-center.yml
+- type: DomainSecurity
+  url: security/enterpret-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

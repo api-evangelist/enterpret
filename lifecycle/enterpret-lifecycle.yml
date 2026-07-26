@@ -1,0 +1,14 @@
+generated: '2026-07-19'
+method: searched
+source: https://www.enterpret.com/changelog
+status_page: https://status.enterpret.com/
+changelog: https://www.enterpret.com/changelog
+versioning:
+  scheme: product-dated
+  note: >-
+    Enterpret ships product-dated changelog releases; the MCP server carries an
+    explicit major version line (MCP Server v2, May 2026). No public REST API
+    version policy is published.
+deprecation:
+  policy_url: null
+  note: No public deprecation / Sunset-header policy found.

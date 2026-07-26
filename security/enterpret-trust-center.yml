@@ -1,0 +1,16 @@
+generated: '2026-07-19'
+method: searched
+probe: true
+source: https://www.enterpret.com/security
+url: https://www.enterpret.com/security
+certifications:
+- SOC 2
+- ISO 27001
+- GDPR
+evidence:
+- source: https://www.enterpret.com/security
+  keywords:
+  - soc 2
+  - iso/iec 27001
+  - compliance certification
+  - gdpr
