@@ -40,12 +40,21 @@ tools:
 - name: get_graph_schema
   description: Lets the assistant see what kinds of feedback you track and how it's organized.
 - name: get_query_examples
-  description: Gives the assistant reference patterns for common kinds of feedback questions before it answers.
+  description: Gives the assistant reference patterns for common kinds of feedback questions before it
+    answers.
 - name: search_graph_fields
-  description: Surfaces integration-specific data points like Zendesk tags, App Store ratings, or Gong call metadata.
+  description: Surfaces integration-specific data points like Zendesk tags, App Store ratings, or Gong
+    call metadata.
 - name: search_graph_values
   description: Looks up the exact themes, accounts, sources, or taxonomy values in your data.
 - name: run_graph_query
   description: Pulls the feedback that answers your question, with citation links back to source records.
 - name: find_user_quote
   description: Surfaces verbatim customer quotes from the records behind your answer.
+deployment:
+  mode: remote
+  endpoint: https://wisdom-api.enterpret.com/server/mcp
+  verified: probed
+  probe: gated
+  checked: '2026-08-12'
+  source: catalog MCP census
