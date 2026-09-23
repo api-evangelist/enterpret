@@ -1,0 +1,1 @@
+{"resource":"https://wisdom-api.enterpret.com/server/mcp","authorization_servers":["https://oauth.enterpret.com"],"scopes_supported":["openid","email","profile","mcp:read","mcp:write"]}
