@@ -40,3 +40,29 @@
     builder: unknown (not in the directory record)
   status: not-a-workflow
   arazzo: null
+- slug: enterpret-slack-own
+  label: Slack (own)
+  partner: slack
+  partner_name: Slack (own)
+  category: Slack app
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  evidence: https://slack.com/marketplace/A020VE20SD6-feedback-ingestion-by-enterpret
+  source: edge
+  relationship: platform-app
+  status: not-a-workflow
+  arazzo: null
+- slug: enterpret-zoom-own
+  label: Zoom (own)
+  partner: zoom
+  partner_name: Zoom (own)
+  category: Zoom app
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  evidence: https://marketplace.zoom.us/apps/sO9330kWQgCbFR_MLfxa3w
+  source: edge
+  relationship: platform-app
+  status: not-a-workflow
+  arazzo: null
