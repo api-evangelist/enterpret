@@ -1,26 +1,5 @@
 generated: '2026-10-14'
 edges:
-- partner_name: Census
-  partner: getcensus
-  partner_match: aggregator
-  marketplace: coverage
-  channel: partner-built
-  direction: partner-built
-  type: coverage
-  relationship: connector-coverage
-  evidence: https://fivetran.com/docs/activations/destinations/available-destinations/enterpret
-  coverage_role:
-  - destination
-  cdp_signals:
-    destination:
-      catalog_entries:
-      - enterpret
-      sync_behaviours:
-      - create only
-      - update only
-      - update or create
-  detected_by: sweep-cdp.py
-  first_seen: '2026-10-14'
 - partner_name: Zapier
   partner: zapier
   partner_match: aggregator
@@ -80,10 +59,48 @@ edges:
   detected: '2026-10-18'
   detected_by: mirror-platform-listings.py
   category: Zoom app
+- partner_name: Census
+  partner: getcensus
+  partner_match: aggregator
+  marketplace: coverage
+  channel: partner-built
+  direction: partner-built
+  type: coverage
+  relationship: connector-coverage
+  evidence: https://fivetran.com/docs/activations/destinations/available-destinations/enterpret
+  coverage_role:
+  - destination
+  cdp_signals:
+    destination:
+      catalog_entries:
+      - enterpret
+      sync_behaviours:
+      - create only
+      - update only
+      - update or create
+  detected_by: sweep-cdp.py
+  first_seen: '2026-10-14'
+- partner_name: SurveyMonkey (own)
+  partner: surveymonkey
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: own
+  evidence: https://www.surveymonkey.com/apps/wK7PyMjt4QE7516EZ4CVGQ_3D_3D/details/
+  mirror_of: surveymonkey/integrations/surveymonkey-integration-edges.yml
+  apps:
+  - Enterpret
+  listing_count: 1
+  detected: '2026-10-20'
+  detected_by: mirror-platform-listings.py
 method: searched
 checked:
 - https://fivetran.com/docs/activations/destinations/available-destinations/enterpret
 - https://zapier.com/api/v4/apps/
 - slack/integrations/slack-integration-edges.yml
 - zoom/integrations/zoom-integration-edges.yml
+- surveymonkey/integrations/surveymonkey-integration-edges.yml
 source: https://fivetran.com/docs/activations/destinations/available-destinations/enterpret
