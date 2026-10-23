@@ -28,6 +28,18 @@
     builder: unknown (not in the directory record)
   status: not-a-workflow
   arazzo: null
+- slug: enterpret-census
+  label: Census
+  partner: getcensus
+  partner_name: Census
+  type: coverage
+  marketplace: coverage
+  channel: partner-built
+  evidence: https://fivetran.com/docs/activations/destinations/available-destinations/enterpret
+  source: edge
+  relationship: connector-coverage
+  status: not-a-workflow
+  arazzo: null
 - slug: enterpret-slack-own
   label: Slack (own)
   partner: slack
@@ -54,18 +66,6 @@
   relationship: platform-app
   status: not-a-workflow
   arazzo: null
-- slug: enterpret-census
-  label: Census
-  partner: getcensus
-  partner_name: Census
-  type: coverage
-  marketplace: coverage
-  channel: partner-built
-  evidence: https://fivetran.com/docs/activations/destinations/available-destinations/enterpret
-  source: edge
-  relationship: connector-coverage
-  status: not-a-workflow
-  arazzo: null
 - slug: enterpret-surveymonkey-own
   label: SurveyMonkey (own)
   partner: surveymonkey
@@ -74,6 +74,19 @@
   marketplace: own
   channel: partner-built
   evidence: https://www.surveymonkey.com/apps/wK7PyMjt4QE7516EZ4CVGQ_3D_3D/details/
+  source: edge
+  relationship: platform-app
+  status: not-a-workflow
+  arazzo: null
+- slug: enterpret-intercom-own
+  label: Intercom (own)
+  partner: intercom
+  partner_name: Intercom (own)
+  category: Analytics
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  evidence: https://www.intercom.com/app-store/?app_package_code=enterpret-mw31
   source: edge
   relationship: platform-app
   status: not-a-workflow

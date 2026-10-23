@@ -25,6 +25,27 @@ edges:
     builder: unknown (not in the directory record)
   detected_by: sweep-workflow-automation.py
   first_seen: '2026-10-15'
+- partner_name: Census
+  partner: getcensus
+  partner_match: aggregator
+  marketplace: coverage
+  channel: partner-built
+  direction: partner-built
+  type: coverage
+  relationship: connector-coverage
+  evidence: https://fivetran.com/docs/activations/destinations/available-destinations/enterpret
+  coverage_role:
+  - destination
+  cdp_signals:
+    destination:
+      catalog_entries:
+      - enterpret
+      sync_behaviours:
+      - create only
+      - update only
+      - update or create
+  detected_by: sweep-cdp.py
+  first_seen: '2026-10-14'
 - partner_name: Slack (own)
   partner: slack
   partner_match: mirror
@@ -59,27 +80,6 @@ edges:
   detected: '2026-10-18'
   detected_by: mirror-platform-listings.py
   category: Zoom app
-- partner_name: Census
-  partner: getcensus
-  partner_match: aggregator
-  marketplace: coverage
-  channel: partner-built
-  direction: partner-built
-  type: coverage
-  relationship: connector-coverage
-  evidence: https://fivetran.com/docs/activations/destinations/available-destinations/enterpret
-  coverage_role:
-  - destination
-  cdp_signals:
-    destination:
-      catalog_entries:
-      - enterpret
-      sync_behaviours:
-      - create only
-      - update only
-      - update or create
-  detected_by: sweep-cdp.py
-  first_seen: '2026-10-14'
 - partner_name: SurveyMonkey (own)
   partner: surveymonkey
   partner_match: mirror
@@ -96,6 +96,23 @@ edges:
   listing_count: 1
   detected: '2026-10-20'
   detected_by: mirror-platform-listings.py
+- partner_name: Intercom (own)
+  partner: intercom
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: own
+  evidence: https://www.intercom.com/app-store/?app_package_code=enterpret-mw31
+  mirror_of: intercom/integrations/intercom-integration-edges.yml
+  apps:
+  - Enterpret
+  listing_count: 1
+  detected: '2026-10-23'
+  detected_by: mirror-platform-listings.py
+  category: Analytics
 method: searched
 checked:
 - https://fivetran.com/docs/activations/destinations/available-destinations/enterpret
@@ -103,4 +120,5 @@ checked:
 - slack/integrations/slack-integration-edges.yml
 - zoom/integrations/zoom-integration-edges.yml
 - surveymonkey/integrations/surveymonkey-integration-edges.yml
+- intercom/integrations/intercom-integration-edges.yml
 source: https://fivetran.com/docs/activations/destinations/available-destinations/enterpret
